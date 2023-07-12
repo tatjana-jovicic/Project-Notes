@@ -1,0 +1,376 @@
+body {
+  background-color: rgb(151, 170, 175);
+}
+
+#header {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+#header h1 {
+  color: rgb(6, 70, 83);
+  font-size: 50px;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 50px;
+  margin: 0;
+  padding: 30px 0;
+  text-align: center;
+}
+
+/*
+--------------------------------------------------------------------------------------ALL BUTTONS
+*/
+#body {
+  text-align: left;
+  flex-direction: row;
+  display: flex;
+}
+
+#body button {
+  background-color: #246a90cb;
+  color: rgb(253, 253, 253);
+  border: none;
+  margin-top: 30px;
+  /*padding: 5px;*/
+  font-size: 20px;
+  height: 100px;
+  box-shadow: 0 2px 4px rgb(0, 0, 0);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+#body button:active {
+  background-color: #1382aa;
+  box-shadow: 0 0 2px rgb(0, 0, 0);
+  transform: translateY(2px);
+}
+#body button:hover {
+  background-color: #0f8dc75d;
+  color: #063c5b;
+}
+
+.button_create {
+  border-radius: 30%;
+  margin-left: 50px;
+  width: 130px;
+  padding: 20px;
+}
+.button_edit {
+  border-radius: 30%;
+  margin-left: 50px;
+  width: 130px;
+  padding: 33px;
+}
+.button_search {
+  border-radius: 30%;
+  margin-left: 50px;
+  width: 130px;
+  padding: 20px;
+}
+.button_refresh {
+  border-radius: 30%;
+  margin-left: 50px;
+  width: 130px;
+  padding: 18px;
+}
+.input_search {
+  border-radius: 20%;
+  margin-left: 10px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  background-color: #bfcad0;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.button_hide {
+  border-radius: 30%;
+  margin-left: 250px;
+  margin-right: 30px;
+  width: 130px;
+  padding: 30px;
+}
+.button_show {
+  border-radius: 30%;
+  padding: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.button_delete {
+  border-radius: 30%;
+  padding: 20px;
+  margin-left: 30px;
+  margin-right: 40px;
+}
+/*
+----------------------------------------------------------------------------------BUTTON CREATE
+*/
+.click_create {
+  padding: 2rem;
+  /* margin: auto;*/
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  background: #3d7397;
+  border-style: groove;
+}
+.name_box_create {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 0;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 5px 10px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.create_headline {
+  border-radius: 20%;
+  margin-right: 5%;
+  text-align: center;
+  background-color: #bfcad0;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+.create_text {
+  border-radius: 20%;
+  margin-right: 5%;
+  text-align: center;
+  background-color: #bfcad0;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+.create_button {
+  border-radius: 100%;
+  margin-right: 5%;
+  font-weight: bold;
+  background-color: #658194;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+  padding: 20px;
+  transition: all 0.2s ease;
+}
+.create_button:active {
+  background-color: #43a4c8;
+  box-shadow: 0 0 2px rgb(0, 0, 0);
+  transform: translateY(2px);
+}
+.create_button:hover {
+  background-color: #b2d6e75d;
+  color: #ffffff;
+}
+
+/*
+------------------------------------------------------------------------------------------CLASS FOR VISIBILITY OR ERROR
+*/
+.hidden {
+  visibility: hidden;
+}
+.text_red {
+  color: red;
+}
+.errorC {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0%;
+}
+.border_red {
+  border: 1px solid red;
+}
+.errorE {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  line-height: 0%;
+  margin-bottom: 2%;
+}
+/*
+-------------------------------------------------------------------------------BUTTON EDIT
+*/
+.message {
+  color: rgb(250, 14, 14);
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-weight: bold;
+}
+.click_edit {
+  padding: 1rem;
+  /*margin: auto;*/
+  margin-top: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+  justify-content: center;
+  display: flex;
+  height: 100%;
+  background: #3d7398;
+  border-style: groove;
+  margin-bottom: 20px;
+}
+.name_box_edit {
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 20px;
+  margin: 0;
+  margin-right: 5px;
+  margin-left: 20px;
+  padding: 20px 20px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+}
+.edit_index {
+  padding: 0.5px;
+  border-radius: 20%;
+  margin-right: 5%;
+  text-align: center;
+  background-color: #bfcad0;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+.edit_headline {
+  border-radius: 20%;
+  margin-right: 5%;
+  text-align: center;
+  background-color: #bfcad0;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+.edit_text {
+  border-radius: 20%;
+  margin-right: 5%;
+  text-align: center;
+  background-color: #bfcad0;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.edit_button {
+  padding: 20px;
+  border-radius: 100%;
+  margin-right: 5%;
+  font-weight: bold;
+  background-color: #658194;
+  cursor: pointer;
+  font-family: "Courier New", Courier, monospace;
+}
+.edit_button:active {
+  background-color: #43a4c8;
+  box-shadow: 0 0 2px rgb(0, 0, 0);
+  transform: translateY(2px);
+}
+.edit_button:hover {
+  background-color: #b2d6e75d;
+  color: #ffffff;
+}
+/*
+------------------------------------------------------------------------------NOTES
+*/
+.post_container {
+  display: flex;
+  flex-direction: column;
+  color: #246a90cb;
+}
+.post_card {
+  border: 1px solid #246a90cb;
+  padding: 0.3rem;
+  margin-bottom: 2rem;
+}
+.post_top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #bbd5e2;
+}
+
+.body_title {
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 30px;
+  margin: 0;
+  padding: 10px 15px;
+  text-align: left;
+  display: flex;
+}
+.text_notes {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 30px;
+  margin: 0;
+  padding: 10px 15px;
+  text-align: left;
+  display: flex;
+}
+.post_delete {
+  height: 2rem;
+  color: rgb(0, 0, 0);
+  background-color: #246a90cb;
+  font-weight: bold;
+  border: outset;
+  width: 70px;
+  text-align: center;
+  display: flex;
+  height: 2rem;
+  text-transform: uppercase;
+  line-height: 20px;
+  margin: 10px; /*da dugme bude u visini naslova*/
+  margin-left: auto;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.post_delete:active {
+  transform: translateY(2px);
+  background-color: #1382aa;
+}
+.post_delete:hover {
+  background-color: #0f8dc75d;
+  color: rgb(220, 29, 22);
+}
+.post_index {
+  color: rgb(0, 0, 0);
+  background-color: #246a90cb;
+  font-weight: bold;
+  border: outset;
+  width: 95px;
+  text-align: center;
+  display: flex;
+  height: 3.5rem;
+  text-transform: uppercase;
+  line-height: 20px;
+  margin: 10px; /*da dugme bude u visini naslova*/
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+.post_index:active {
+  transform: translateY(2px);
+  background-color: #1382aa;
+}
+.post_index:hover {
+  background-color: #0f8dc75d;
+  color: rgb(22, 48, 220);
+}
