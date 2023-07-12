@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+    <div id="header">
+      <h1 id="title" class="title_notes">NOTES</h1>
+    </div>
+    <div id="body">
+      <button id="button-create" class="button_create">Create New</button>
+      <button id="button-edit" class="button_edit">Edit</button>
+      <button id="button-refresh" class="button_refresh">Refresh</button>
+      <button id="button-search" class="button_search">Search</button>
+      <input
+        id="input-search"
+        class="input_search hidden"
+        type="text"
+        placeholder="Search..."
+      />
+      <button id="button-hide" class="button_hide">Hide</button>
+      <button id="button-show" class="button_show">Show</button>
+      <button id="button-delete" class="button_delete">Delete All</button>
+    </div>
+
+    <div id="click-create" class="click_create hidden">
+      <h3 class="name_box_create">CREATE NEW</h3>
+      <input
+        id="create-headline"
+        class="create_headline"
+        type="text"
+        placeholder="Title..."
+      />
+      <input
+        id="create-text"
+        class="create_text"
+        type="text"
+        placeholder="Text..."
+      />
+      <button id="create-button" class="create_button">CREATE</button>
+    </div>
+    <p id="error-message" class="text-red errorC hidden"></p>
+    <p id="message" class="message hidden">IMPORTANT! For automatic entry in the "index" field, click on the "TAKE THE INDEX" 
+      button on the post we are editing or manually enter the post index!</p>
+   
+    <div id="click-edit" class="click_edit hidden">
+      <h3 class="name_box_edit">EDIT</h3>
+      <input
+        id="edit-index"
+        class="edit_index"
+        type="number"
+        autofocus="true"
+        placeholder="Index..."
+      />
+      <input
+        id="edit-headline"
+        class="edit_headline"
+        type="text"
+        placeholder="Title..."
+      />
+      <input
+        id="edit-text"
+        class="edit_text"
+        type="text"
+        placeholder="Text..."
+      />
+      <button id="edit-button" class="edit_button">EDIT</button>
+    </div>
+    <p id="error-message-edit" class="text-red errorE hidden"></p>
+ 
+    <!----------------------------------------------------------------------->
+    <div id="posts" class="posts_container">
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
